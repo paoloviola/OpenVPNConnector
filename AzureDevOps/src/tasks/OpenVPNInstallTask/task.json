@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+  "id": "73ccde3a-84b5-456e-b568-09101d511e28",
+  "name": "OpenVPNInstall",
+  "friendlyName": "OpenVPN Install",
+  "description": "Install the OpenVPN service on the target machine",
+  "helpMarkDown": "",
+  "category": "Utility",
+  "author": "Paolo V.",
+  "visibility": [ "Build", "Release" ],
+  "version": {
+    "Major": 0,
+    "Minor": 1,
+    "Patch": 0
+  },
+  "inputs": [
+    {
+      "name": "version",
+      "type": "string",
+      "label": "OpenVPN Version",
+      "required": false,
+      "helpMarkDown": "Specify the version of OpenVPN to install. Leave empty for the latest version"
+    }
+  ],
+  "execution": {
+    "Node20_1": {
+      "target": "index.js"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+  "id": "591c5019-abcb-4bbf-8fad-c145693a7c96",
+  "name": "OpenVPNConnect",
+  "friendlyName": "OpenVPN Connect",
+  "description": "Connect to VPN using certificate-based authentication with OpenVPN",
+  "helpMarkDown": "",
+  "category": "Utility",
+  "author": "Paolo V.",
+  "visibility": [ "Build", "Release" ],
+  "version": {
+    "Major": 0,
+    "Minor": 1,
+    "Patch": 0
+  },
+  "inputs": [
+    {
+      "name": "serviceConnection",
+      "type": "connectedService:openvpn-service-connection",
+      "label": "OpenVPN Service Connection",
+      "required": true,
+      "helpMarkDown": "Select the VPN Service Connection configured with certificate and VPN config"
+    },
+    {
+      "name": "routes",
+      "type": "multiLine",
+      "label": "Routes",
+      "helpMarkDown": "List of additional routes to tunnel through. E.g.:\n10.0.0.0/16\n10.1.0.0/16"
+    }
+  ],
+  "execution": {
+    "Node20_1": {
+      "target": "index.js"
+    }
+  }
+}

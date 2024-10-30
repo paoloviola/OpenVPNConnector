@@ -19,7 +19,7 @@ The **OpenVPN Connector** is an Azure Pipelines extension that facilitates the c
 ## Installation
 
 1. **Download from Marketplace:**
-   - Go to the extension in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=paoloviola.openvpn-connector).
+   - Go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) and search for **OpenVPN Connector**.
    - Click on **Get it free** to install the extension in your Azure DevOps organization.
 
 ## Configuration
