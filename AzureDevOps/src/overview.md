@@ -32,7 +32,7 @@ For support, please open an issue in the repository. Contributions are welcome! 
 
 ## License
 
-This extension is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This extension is licensed under the MIT License. See the [LICENSE](license-terms.md) file for details.
 
 ## Author
 
