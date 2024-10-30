@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "id": "openvpn-connector",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "name": "OpenVPN Connector",
   "description": "Extension that helps connect machines to a VPN Gateway",
   "categories": [ "Azure Pipelines" ],
